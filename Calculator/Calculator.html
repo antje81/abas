@@ -1,0 +1,67 @@
+<!DOCTYPE html> <!-- information about kind of the document  -->
+
+<html lang="en"> <!-- rootelement, language english -->
+
+<head> <!-- invisible, but necessary  -->
+
+    <meta charset="utf-8"> <!-- character coding -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- important for mobile devices -->
+
+    <title>Calculations</title>
+    <!-- to be seen in the tab and taskbar, search engines use it as well as read aloud programs  -->
+
+    <script type="text/javascript" src="ArithmeticOperations.js"></script>  <!-- javascript is included  -->
+
+    <link rel="stylesheet" href="DisplayCalculations.css">
+
+</head> <!-- end of the head  -->
+
+<body> <!-- everything in the body is displayed in the main browser area  -->
+
+<header> <!-- is used for logos and greetings  -->
+    <p>A small calculator</p>
+    <h1>Let's do some calculations </h1>
+    <img src="images.jpg" alt="Dragonpicture with math task">
+</header>
+
+<!-- creation of a form, all input elements contained in this element will be taken into account when sending the form  -->
+<!-- use post-method, as mainly data is to be transmitted -->
+<form method="post" name="calculate">
+
+    <!-- label  represents a label for form elements-->
+    <label for="firstNumber">first number:
+        <input id="firstNumber" name="firstNumber">
+    </label>
+
+<!-- use radio buttons to select only one option -->
+    <input type="radio" id="sumUp" name="radio1" value=" + ">
+    <label for="sumUp"> + </label>
+
+    <input type="radio" id="subtract" name="radio1" value=" - ">
+    <label for="subtract"> - </label>
+
+    <input type="radio" id="multiply" name="radio1" value=" * ">
+    <label for="multiply"> * </label>
+
+    <input type="radio" id="toDivide" name="radio1" value=" / ">
+    <label for="toDivide"> / </label>
+
+    <label for="secondNumber">second number:
+        <input id="secondNumber" name="secondNumber">
+    </label>
+
+<!-- onclick triggers events when clicked on -->
+    <input type="button" name="button1" value="calculate"
+           onClick="calculations()">
+
+    <br>
+    <label for="resultOfCalculation">result of calculation:
+        <input type="text" id="resultOfCalculation" name="resultOfCalculation">
+    </label>
+</form>
+
+<footer> here could be your name </footer> <!-- used for contact data and so on -->
+
+</body>
+</html>

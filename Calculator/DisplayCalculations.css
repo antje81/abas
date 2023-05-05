@@ -1,0 +1,30 @@
+body {
+    background-color: #e6eef2;
+}
+
+h1 {
+    color: #3f2aa3;
+    background-color: #e6eef2;
+    font-family: "Papyrus", fantasy;
+    font-size: 52px;
+    border-radius: .5em;
+    border-color: #3f2aa3;
+    text-align: center;
+}
+body {
+
+    color: #3f2aa3;
+    background-color: #e6eef2;
+    font-family: "Papyrus", fantasy;
+    font-size: 22px;
+
+}
+
+form {
+    text-align: center;
+
+}
+header {
+    text-align: center;
+
+}
